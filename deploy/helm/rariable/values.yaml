@@ -1,0 +1,28 @@
+replicaCount: 1
+
+image:
+  repository: rariable
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  port: 80
+  targetPort: 8080
+
+config:
+  raribleBaseURL: "https://api.rarible.org"
+  httpPort: "8080"
+
+# Set via --set secret.apiKey=... or a values file outside git.
+# Leave empty and set existingSecret to reuse a Secret created elsewhere.
+secret:
+  apiKey: ""
+  existingSecret: ""
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 32Mi
+  limits:
+    cpu: 200m
+    memory: 64Mi

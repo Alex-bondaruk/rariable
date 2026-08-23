@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "rariable.fullname" . }}
+  labels:
+    {{- include "rariable.labels" . | nindent 4 }}
+data:
+  RARIBLE_BASE_URL: {{ .Values.config.raribleBaseURL | quote }}
+  HTTP_PORT: {{ .Values.config.httpPort | quote }}
