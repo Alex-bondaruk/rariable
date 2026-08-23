@@ -13,7 +13,10 @@ import (
 	"time"
 )
 
-const defaultTimeout = 10 * time.Second
+const (
+	defaultTimeout             = 10 * time.Second
+	defaultMaxIdleConnsPerHost = 10 // http.DefaultTransport keeps only 2, too few for concurrent calls to one host
+)
 
 // Client talks to the Rarible Protocol API.
 type Client struct {
@@ -41,15 +44,20 @@ func New(baseURL, apiKey string) (*Client, error) {
 		return nil, fmt.Errorf("rarible: baseURL must be an absolute URL, got %q", baseURL)
 	}
 
+	transport := http.DefaultTransport.(*http.Transport).Clone()
+	transport.MaxIdleConnsPerHost = defaultMaxIdleConnsPerHost
+
 	return &Client{
-		baseURL:    baseURL,
-		apiKey:     apiKey,
-		httpClient: &http.Client{Timeout: defaultTimeout},
+		baseURL: baseURL,
+		apiKey:  apiKey,
+		httpClient: &http.Client{
+			Timeout:   defaultTimeout,
+			Transport: transport,
+		},
 	}, nil
 }
 
-// do performs a request against the Rarible API.
-// in is sent as a JSON body when not nil; out must be a pointer to decode a 2xx body into.
+// do sends a request and decodes a 2xx JSON response into out.
 func (c *Client) do(ctx context.Context, method, path string, in, out any) error {
 	var body io.Reader
 	if in != nil {
