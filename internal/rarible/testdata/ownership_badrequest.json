@@ -1,1 +1,4 @@
-{"code":"BAD_REQUEST","message":"Illegal format for ID: 'broken-id', blockchain prefix not found"}
+{
+  "code": "BAD_REQUEST",
+  "message": "Illegal format for ID: 'broken-id', blockchain prefix not found"
+}

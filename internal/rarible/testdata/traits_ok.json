@@ -1,1 +1,14 @@
-{"traits":[{"key":"Hat","value":"Halo","rarity":"3.2406481"},{"key":"Eyes","value":"Laser Eyes","rarity":"0.690138"}]}
+{
+  "traits": [
+    {
+      "key": "Hat",
+      "value": "Halo",
+      "rarity": "3.2406481"
+    },
+    {
+      "key": "Eyes",
+      "value": "Laser Eyes",
+      "rarity": "0.690138"
+    }
+  ]
+}

@@ -1,1 +1,89 @@
-{"id":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d:664:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de","blockchain":"ETHEREUM","itemId":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d:664","contract":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d","collection":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d","tokenId":"664","owner":"ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de","value":"1","createdAt":"2026-08-21T16:13:37.803Z","lastUpdatedAt":"2026-08-23T14:00:02.765Z","creators":[],"lazyValue":"0","pending":[],"bestSellOrder":{"id":"ETHEREUM:0xaa59bb70f15aa2fcdabd15950f3d6e1c21ab9cf1ae5a00ebe287f9f1864366a4","fill":"0","platform":"OPEN_SEA","status":"ACTIVE","startedAt":"2026-08-23T13:59:57Z","endedAt":"2026-08-23T14:59:57Z","makeStock":"1","cancelled":false,"optionalRoyalties":false,"createdAt":"2026-08-23T13:59:58Z","lastUpdatedAt":"2026-08-23T13:59:58Z","makePrice":"7.849999","makePriceUsd":"19271.2119651096406513167","maker":"ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de","make":{"type":{"@type":"ERC721","contract":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d","collection":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d","tokenId":"664"},"value":"1"},"take":{"type":{"@type":"ETH","blockchain":"ETHEREUM"},"value":"7.849999"},"salt":"0x72db8c0b00000000000000000000000000000000000000000b4c22c50a7d693d","signature":"0x","feeTakers":[],"data":{"@type":"ETH_BASIC_SEAPORT_DATA_V1","protocol":"ETHEREUM:0x0000000000000068f116a894984e2db1123eb395","orderType":"FULL_OPEN","offer":[{"itemType":"ERC721","token":"ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d","identifierOrCriteria":"664","startAmount":"1","endAmount":"1"}],"consideration":[{"itemType":"NATIVE","token":"ETHEREUM:0x0000000000000000000000000000000000000000","identifierOrCriteria":"0","startAmount":"7771499010000000000","endAmount":"7771499010000000000","recipient":"ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de"},{"itemType":"NATIVE","token":"ETHEREUM:0x0000000000000000000000000000000000000000","identifierOrCriteria":"0","startAmount":"78499990000000000","endAmount":"78499990000000000","recipient":"ETHEREUM:0x0000a26b00c1f0df003000390027140000faa719"}],"zone":"ETHEREUM:0x0000000000000000000000000000000000000000","zoneHash":"0x0000000000000000000000000000000000000000000000000000000000000000","conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000","counter":0,"nonce":"0"},"version":0},"version":51}
+{
+  "id": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d:664:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de",
+  "blockchain": "ETHEREUM",
+  "itemId": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d:664",
+  "contract": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+  "collection": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+  "tokenId": "664",
+  "owner": "ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de",
+  "value": "1",
+  "createdAt": "2026-08-21T16:13:37.803Z",
+  "lastUpdatedAt": "2026-08-23T14:00:02.765Z",
+  "creators": [],
+  "lazyValue": "0",
+  "pending": [],
+  "bestSellOrder": {
+    "id": "ETHEREUM:0xaa59bb70f15aa2fcdabd15950f3d6e1c21ab9cf1ae5a00ebe287f9f1864366a4",
+    "fill": "0",
+    "platform": "OPEN_SEA",
+    "status": "ACTIVE",
+    "startedAt": "2026-08-23T13:59:57Z",
+    "endedAt": "2026-08-23T14:59:57Z",
+    "makeStock": "1",
+    "cancelled": false,
+    "optionalRoyalties": false,
+    "createdAt": "2026-08-23T13:59:58Z",
+    "lastUpdatedAt": "2026-08-23T13:59:58Z",
+    "makePrice": "7.849999",
+    "makePriceUsd": "19271.2119651096406513167",
+    "maker": "ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de",
+    "make": {
+      "type": {
+        "@type": "ERC721",
+        "contract": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "collection": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "tokenId": "664"
+      },
+      "value": "1"
+    },
+    "take": {
+      "type": {
+        "@type": "ETH",
+        "blockchain": "ETHEREUM"
+      },
+      "value": "7.849999"
+    },
+    "salt": "0x72db8c0b00000000000000000000000000000000000000000b4c22c50a7d693d",
+    "signature": "0x",
+    "feeTakers": [],
+    "data": {
+      "@type": "ETH_BASIC_SEAPORT_DATA_V1",
+      "protocol": "ETHEREUM:0x0000000000000068f116a894984e2db1123eb395",
+      "orderType": "FULL_OPEN",
+      "offer": [
+        {
+          "itemType": "ERC721",
+          "token": "ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+          "identifierOrCriteria": "664",
+          "startAmount": "1",
+          "endAmount": "1"
+        }
+      ],
+      "consideration": [
+        {
+          "itemType": "NATIVE",
+          "token": "ETHEREUM:0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "7771499010000000000",
+          "endAmount": "7771499010000000000",
+          "recipient": "ETHEREUM:0x4459084da2d3a774c436f2e75f2e3fe9335dc5de"
+        },
+        {
+          "itemType": "NATIVE",
+          "token": "ETHEREUM:0x0000000000000000000000000000000000000000",
+          "identifierOrCriteria": "0",
+          "startAmount": "78499990000000000",
+          "endAmount": "78499990000000000",
+          "recipient": "ETHEREUM:0x0000a26b00c1f0df003000390027140000faa719"
+        }
+      ],
+      "zone": "ETHEREUM:0x0000000000000000000000000000000000000000",
+      "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+      "counter": 0,
+      "nonce": "0"
+    },
+    "version": 0
+  },
+  "version": 51
+}
