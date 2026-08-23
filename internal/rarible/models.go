@@ -34,3 +34,27 @@ type SellOrder struct {
 	MakePrice    string `json:"makePrice"`
 	MakePriceUsd string `json:"makePriceUsd"`
 }
+
+// TraitsRarityRequest is the body of POST /v0.1/items/traits/rarity.
+type TraitsRarityRequest struct {
+	CollectionID string          `json:"collectionId"`
+	Properties   []TraitProperty `json:"properties"`
+}
+
+// TraitProperty is a single trait key/value pair.
+type TraitProperty struct {
+	Key   string `json:"key"`
+	Value string `json:"value"`
+}
+
+// TraitsRarityResponse holds the requested traits enriched with rarity.
+type TraitsRarityResponse struct {
+	Traits []TraitRarity `json:"traits"`
+}
+
+// TraitRarity is a trait with its rarity percentage, serialized as a string.
+type TraitRarity struct {
+	Key    string `json:"key"`
+	Value  string `json:"value"`
+	Rarity string `json:"rarity"`
+}
